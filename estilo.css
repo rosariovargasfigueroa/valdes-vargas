@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/* ALGUNAS DEFINICIONES GENÉRICAS */
+
+body{
+	font-size:1.8rem;
+	font-family: 'Poppins', sans-serif;
+	background:rgba(255,255,255,1);
+	color:rgba(180,51,102.9);
+}
+
+h1, h2, h3, h4{
+	font-weight:400;
+	font-family: 'Comfortaa', cursive;
+}
+
+h1{
+	font-size:5rem;
+	letter-spacing:0.1em;
+	color:rgba(255,255,255,0.9);
+	text-align:center;
+}
+
+h2{
+	font-size:2rem;
+	letter-spacing:0.1em;
+	color:rgba(255,255,255,0.9);
+	text-align:center;
+}
+
+h3{
+	font-size:3rem;
+	letter-spacing:0.1em;
+	color:rgba(180,51,102.9);
+	text-align:center;
+	padding:1rem 0;
+}
+
+a{
+	color:rgba(180,51,102.9);
+	text-decoration:underline;
+}
+
+a:hover{
+	color:rgba(255,0,0,1);
+	text-decoration:underline;
+}
+
+/* COMENZAMOS CON LAS PARTES */
+
+#contenido{width:98%; margin:1%;}
+
+
+header{
+	width:98%;
+	top:36%;
+	position: absolute;
+	text-align:center;
+	z-index:9;
+	color:white;
+}
+
+video{
+	width:100%;
+	height:auto;
+}
+
+#somos{
+	width:100%;
+	color:rgba(180,51,102.9);
+	background:rgb(250,250,250);
+	margin-bottom:2%;
+	}
+
+.dupla{
+	width:46%;
+	padding:2%;
+	float:left;
+	background-color:red;
+	}
+
+.primera{
+	min-height:300px;
+	text-align:left;
+	background-color:#EFE4E8;
+	background-image:url('media/dupla-01.jpg');
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+.primera h4{padding: 2% 40% 1% 2%;}
+
+
+.primera h5{padding: 1% 35% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+
+.primera p{padding: 2% 40% 2% 2%;}
+
+.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
+
+.segunda{
+	min-height:300px;
+	text-align:right;
+	background-color:#EFE4E8;
+	background-image:url('media/dupla-02.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+
+.segunda h4{padding: 2% 2% 1% 40%;}
+
+.segunda h5{padding: 1% 2% 2% 30%; margin-bottom:5em; letter-spacing:0.1em;}
+
+.segunda p{padding: 2% 2% 2% 40%;}
+
+.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
+
+#somos hr{
+	clear:both;
+	border:solid;
+	color:rgba(180,51,102.9);
+	}
+
+#portafolio{
+	width:100%;
+	padding-bottom:1%;
+	background:linear-gradient(to bottom, #EFE4E8, #fff);
+}
+
+.item {
+	width:23%;
+	margin:1%;
+	color:#000;
+	background:white;
+	box-shadow:0 0 5px rgba(180,51,102.9);
+}
+
+.item:hover{
+	cursor:crosshair;
+	color:rgba(180,51,102.9);
+}
+
+.item figure{
+	overflow:hidden;
+
+}
+
+.item figure img{
+	width:100%;
+	height:auto;
+	margin-bottom:-4px;
+	filter: grayscale(1);
+}
+
+.item:hover figure img{
+	transform:scale(2);
+	filter: grayscale(0);
+	transition:all ease-out 1s;
+}
+
+.item h4{
+	font-size:1.5em;
+	letter-spacing:0.025em;
+	margin:5% 5% 3% 5%;
+}
+
+.item p{
+	font-size:0.875em;
+	letter-spacing:0.05em;
+	margin:2% 5% 6% 5%;
+}
+
+footer{
+	width:100%;
+	padding:3em 0 1em 0;
+	text-align:center;
+	width:100%;
+
+
+}
+
+footer p{
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	font-size:0.9em;
+	width:100%;
+border:solid;
+color:rgba(180,51,102.9);
+
+	}
+
+/* AJUSTES PARA QUE SE VEA BIEN EN DISTINTOS DISPOSITIVOS */
+
+@media screen and (orientation: portrait){
+
+	.dupla{
+		width:96%;
+		padding:2%;
+		float:left;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+
+	header{top:24%;}
+
+}
+
+@media screen and (max-width: 768px){
+
+	header{top:12%;}
+
+	.item{
+		width:48%;
+		margin:1%;
+		color:#cc3366;
+		color:#000;
+
+	}
+
+}
+
+@media screen and (max-width: 576px){
+
+	header{top:2%;}
+
+	.item{
+		width:96%;
+		margin:2%;
+		color:#cc3366;
+		color:#000;
+	}
+
+}
